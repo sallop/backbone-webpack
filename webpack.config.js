@@ -14,9 +14,17 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
-      //"window.jQuery": "jquery"
+      "window.jQuery": "jquery",
+      '_': 'underscore',
+      'Backbone': 'backbone'
     })
   ],
+  //externals: {
+  //   $: "jquery",
+  //   jQuery: "jquery",
+  //   '_': 'underscore',
+  //   'Backbone': 'backbone'
+  //},
   devtool: '#inline-source-map',
   module: {
     loaders: [
