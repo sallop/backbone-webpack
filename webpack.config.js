@@ -25,10 +25,5 @@ module.exports = {
   //   '_': 'underscore',
   //   'Backbone': 'backbone'
   //},
-  devtool: '#inline-source-map',
-  module: {
-    loaders: [
-      { test: /\.css$/, loader: "style!css" }
-    ]
-  }
+  devtool: '#inline-source-map'
 };

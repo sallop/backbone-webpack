@@ -4,16 +4,6 @@
 //var json2 = require('json2');
 //var _ = require('underscore');
 //var Backbone = require('backbone');
-var scores = [84, 99, 91, 65, 87, 55, 72, 68, 95, 42],
-    topScores = [], scoreLimit = 90;
-$(document).ready(function(){
-  $("p").click(function(){
-    topScores = _.select(scores, function(score){ return score > scoreLimit; });
-    console.log(topScores);
-
-    $(this).hide();
-  });
-});
 
 var AppView = Backbone.View.extend({
   el: '#container',
@@ -26,5 +16,5 @@ var AppView = Backbone.View.extend({
     //this.el.html("Hello World");
   }
 });
-
+// Initializers
 var appView = new AppView();
