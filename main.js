@@ -6,13 +6,15 @@
 //var Backbone = require('backbone');
 
 var AppView = Backbone.View.extend({
-  el: '#container',
+  el: $('#container'),
+  template: _.template("<h3>Hello <%= who %></h3>"),
   initialize: function(){
     console.log("Backbone is called");
     this.render();
   },
   render: function(){
-    this.$el.html("Hello World!");
+    //this.$el.html("Hello World!");
+    this.$el.html(this.template({ who: 'World!'}));
     //this.el.html("Hello World");
   }
 });
