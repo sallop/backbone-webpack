@@ -17,7 +17,7 @@ module.exports = {
       "window.jQuery": "jquery",
       '_': 'underscore',
       'Backbone': 'backbone',
-      'Backbone.LocalStorage': 'backbone.localstorage'
+      //'Backbone.LocalStorage': 'backbone.localstorage'
     })
   ],
   //externals: {
